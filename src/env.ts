@@ -79,6 +79,10 @@ export interface QueueFromEnvDefinition {
   requeueOnError?: boolean;
   attributeNames?: QueueAttributeName[];
   messageAttributeNames?: string[];
+  isFifo?: boolean;
+  defaultGroupId?: string;
+  defaultDeduplicationId?: string;
+  defaultDelaySeconds?: number;
   defaults?: Partial<
     Pick<SqsQueueConfig, 'batchSize' | 'waitTimeSeconds' | 'visibilityTimeout'>
   >;
@@ -191,6 +195,10 @@ export const buildSqsMicroserviceOptionsFromEnv = (
       messageAttributeNames: definition.messageAttributeNames,
       deleteMessageOnSuccess: definition.deleteMessageOnSuccess,
       requeueOnError: definition.requeueOnError,
+      isFifo: definition.isFifo,
+      defaultGroupId: definition.defaultGroupId,
+      defaultDeduplicationId: definition.defaultDeduplicationId,
+      defaultDelaySeconds: definition.defaultDelaySeconds,
     };
   });
 

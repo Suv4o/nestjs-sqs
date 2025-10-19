@@ -1,6 +1,6 @@
 {
   "name": "@suv4o/nestjs-sqs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Custom NestJS microservice transport strategy for AWS SQS with native @MessagePattern support.",
   "keywords": [
     "nestjs",
