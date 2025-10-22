@@ -2,6 +2,11 @@
 
 `@suv4o/nestjs-sqs` is a transport strategy for NestJS that lets you process Amazon SQS messages with the familiar `@MessagePattern()` API. It also ships with a matching `ClientProxy`, so you can publish events or RPC-style commands without pulling in extra producer libraries.
 
+## Links
+
+- npm: <https://www.npmjs.com/package/@suv4o/nestjs-sqs>
+- GitHub: <https://github.com/Suv4o/nestjs-sqs>
+
 ## Features
 
 - ✅ Works with NestJS microservices (`CustomTransportStrategy`, `@MessagePattern`)
